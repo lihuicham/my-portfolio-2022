@@ -14,6 +14,12 @@
         <link rel="stylesheet" href="style.css">
 
         <title>Li Hui Cham</title>
+
+        <!--==================== FAVICON ====================-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/fav_icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/fav_icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/fav_icon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -97,7 +103,7 @@
                             </a>
                         </div>
 
-                        <div>
+                        <div class="home_img">
                             <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -122,7 +128,7 @@
                                 High level experience in web design and development knowledge,
                                 producing quality work. 
                             </p>
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contact" class="button button--flex home_button">
                                 Contact Me <i class="uil uil-message button_icon"></i>
                             </a>
                         </div>
@@ -716,6 +722,63 @@
                 </div>
             </section>
 
+            <!--==================== WORK ====================-->
+            <section class="work section" id="work">
+                <div class="section_header">
+                    <h2 class="section_title">My Work</h2>
+                    <span class="section_subtitle">Projects Completed</span>    
+                </div>
+
+                <div class="work_filters">
+                    <span class="work_item active-work" data-filter='all'>All</span>
+                    <span class="work_item" data-filter='.web'>Web</span>
+                    <span class="work_item" data-filter='.mobile'>Mobile</span>
+                    <span class="work_item" data-filter='.design'>Design</span>
+                </div>
+
+                <div class="work_container container grid">
+                    <div class="work_card mix web">
+                        <img src="assets/work_images/work1.jpg" alt="" class="work_img">
+                        <h3 class="work_title">Web Design</h3>
+                        <a href="#" class="work_button">
+                            Demo <i class="uil uil-arrow-right work_icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work_card mix mobile">
+                        <img src="assets/work_images/work2.jpg" alt="" class="work_img">
+                        <h3 class="work_title">App Design</h3>
+                        <a href="#" class="work_button">
+                            Demo <i class="uil uil-arrow-right work_icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work_card mix design">
+                        <img src="assets/work_images/work3.jpg" alt="" class="work_img">
+                        <h3 class="work_title">Brand Design</h3>
+                        <a href="#" class="work_button">
+                            Demo <i class="uil uil-arrow-right work_icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work_card mix web">
+                        <img src="assets/work_images/work4.jpg" alt="" class="work_img">
+                        <h3 class="work_title">Web Design</h3>
+                        <a href="#" class="work_button">
+                            Demo <i class="uil uil-arrow-right work_icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work_card mix mobile">
+                        <img src="assets/work_images/work5.jpg" alt="" class="work_img">
+                        <h3 class="work_title">App Design</h3>
+                        <a href="#" class="work_button">
+                            Demo <i class="uil uil-arrow-right work_icon"></i>
+                        </a>
+                    </div>
+                </div> 
+            </section>
+
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
                 <div class="project_bg">
@@ -945,6 +1008,12 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/swiper/swiper-bundle.min.js"></script>
+
+        <!--==================== SCROLL REVEAL JS ====================-->
+        <script src="assets/scrollreveal/scrollreveal.min.js"></script>
+
+        <!--==================== MIXITUP FILTER ====================-->
+        <script src="assets/mixitup/mixitup.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="main.js"></script>

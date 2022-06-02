@@ -188,3 +188,36 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/ 
+const sr = ScrollReveal({
+    origin: 'top', 
+    distance: '60px',
+    duration: 2500, 
+    delay: 400, 
+    //reset: true, 
+})
+
+sr.reveal(`.home_title, .home_subtitle, .home_img`)
+sr.reveal(`.home_description, .home_button`, {delay: 700, origin: 'bottom'})
+sr.reveal(`.home_social`, {delay: 1500})
+
+/*==================== MIXITUP FILTER WORK ====================*/ 
+let mixerWork = mixitup('.work_container', {
+    selectors: {
+        target: '.work_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+/* Active Link Work */
+const linkWork = document.querySelectorAll('.work_item')
+
+function activeWork() {
+    linkWork.forEach(item => item.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
+
+linkWork.forEach(item => item.addEventListener('click', activeWork))
