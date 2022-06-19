@@ -745,6 +745,8 @@ img {
 .portfolio_img {
   width:265px;
   justify-self: center;
+  border-radius: 1rem;
+  resize: vertical;
 }
 
 .portfolio_title {
@@ -792,7 +794,7 @@ img {
   outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
+/*==================== WORK ====================*/
 .work_container {
   padding-top: 1rem;
 }
@@ -823,6 +825,10 @@ img {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .work_card:hover {
@@ -832,6 +838,16 @@ img {
 .work_img {
   border-radius: 1rem;
   margin-bottom: var(--mb-0-75);
+}
+
+.work_title-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--mb-0-75);
+}
+
+.work_github {
+  color: var(--first-color);
 }
 
 .work_title {
