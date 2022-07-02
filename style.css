@@ -194,8 +194,10 @@ img {
 
 .nav_logo,
 .nav_toggle {
-  color: var(--title-color);
+  color: #00AEB9;
   font-weight: var(--font-medium);
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
 }
 
 .nav_logo:hover {
@@ -295,17 +297,21 @@ img {
   color: var(--first-color);
 }
 
-.homr_social-icon:hover {
+.home_social-icon:hover {
   color:var(--first-color-alt)
 }
 
-.home_blob {
+/* .home_blob {
   width: 200px;
   fill: var(--first-color);
 }
 
 .home_blob-img {
   width: 170px;
+} */
+
+.home_img {
+  border-radius: 50%;
 }
 
 .home_data {
