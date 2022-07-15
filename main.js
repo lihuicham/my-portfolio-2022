@@ -221,3 +221,11 @@ function activeWork() {
 }
 
 linkWork.forEach(item => item.addEventListener('click', activeWork))
+
+function hover(element) {
+    element.setAttribute('src', './assets/images/alt_me2.jpg');
+  }
+  
+  function unhover(element) {
+    element.setAttribute('src', './assets/images/me.png');
+  }

@@ -136,6 +136,10 @@ img {
   height: auto;
 }
 
+address {
+  font-style: normal
+}
+
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
@@ -194,10 +198,13 @@ img {
 
 .nav_logo,
 .nav_toggle {
-  color: #00AEB9;
   font-weight: var(--font-medium);
   font-family: 'Cinzel', serif;
   font-size: 2rem;
+}
+
+.nav_logo {
+  color: #00AEB9;
 }
 
 .nav_logo:hover {
@@ -312,6 +319,10 @@ img {
 
 .home_img {
   border-radius: 50%;
+  float: left;
+  width:  20rem;
+  height: 20rem;
+  background-size: cover;
 }
 
 .home_data {
@@ -965,6 +976,10 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.contact_link {
+  display: flex;
+}
+
 .contact_icon {
   font-size: 2rem;
   color: var(--first-color);
@@ -1123,10 +1138,6 @@ img {
 
   .home_content {
     grid-template-columns: .25fr 3fr;
-  }
-
-  .home_blob {
-    width: 180px;
   }
 
   .skills_title {
